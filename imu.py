@@ -42,19 +42,6 @@
 # 5 - Magnetometer (micro-Tesla uT)
 ##################################################################################################################
 
-##################################################################################################################
-# Notes:           v = u + at
-#        Where v is the final velocity
-#              u is the initial velocity
-#              a is the acceleration
-#              t is the time taken
-#                  s = ut + 1/2 (at^2)
-#        Where s is the distance traveled by an object
-#              u is the initial velocity of the object
-#              a is the acceleration 
-#              t is the time taken 
-##################################################################################################################
-
 #### include external libraries ####
 import socket
 import traceback
@@ -133,7 +120,9 @@ with open(csvf, 'w', newline='', encoding='ascii') as csv_handle:
             #print('Length of message', len(message))
             my_array = message.split(b',')
             #print(message)
-            #print(my_array[0], my_array[1])
+            #print("gx: "+my_array[6]+"gy: "+my_array[7])
+            print(my_array[6])
+            print(my_array[7])
 
             print('Length of array', len(my_array))
             f.write("\nLength of array: ")
@@ -154,34 +143,12 @@ with open(csvf, 'w', newline='', encoding='ascii') as csv_handle:
                 if previous_timestamp <= 0:  
                     previous_timestamp = float(my_array[0])
                     time_diff = float(0)
-                    init_vel_x = float(0)
-                    init_vel_y = float(0)
-                    init_vel_z = float(0)
                 else:
                     time_diff = float(my_array[0]) - previous_timestamp
                     previous_timestamp = float(my_array[0])
 
                 print('Time taken:', time_diff, 'secs')
                 
-                # 1 m/s (meter per second) = 39.3700787 ips (inch per second)
-                fin_vel_x = init_vel_x + (ax * time_diff)
-                vel_ips_x = fin_vel_x * float(39.3700787)
-                fin_vel_y = init_vel_y + (ay * time_diff)
-                vel_ips_y = fin_vel_y * float(39.3700787)
-                fin_vel_z = init_vel_z + (az * time_diff)
-                vel_ips_z = fin_vel_z * float(39.3700787)
-
-                init_vel_x = fin_vel_x
-                init_vel_y = fin_vel_y
-                init_vel_z = fin_vel_z
-
-                print('Initial velocity m/s:', init_vel_x)
-                print('Final velocity m/s:', fin_vel_x)
-
-                print('Velocity x (ips):', vel_ips_x, ax)
-                print('Velocity y (ips):', vel_ips_y, ay)
-                print('Velocity z (ips):', vel_ips_z, az)
-
                 # Implementation of Madgwick's IMU and AHRS algorithms.
                 # Uses the New Orientation Filter instead of conventional Kalman filter
                 quaternion_list = MadgwickAHRSupdate(gx, gy, gz, ax, ay, az, mx, my, mz)     # c code module to be called by Python  
