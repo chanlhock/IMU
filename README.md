@@ -19,27 +19,27 @@ http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygame
 
 Code included leveraged from open source with thanks :-) are:
 ```
-	Python code:
-		ponycube.py, euclid.py
-	C code to be compiled into modules to be called from Python:
-		MadgwickAHRS.c & MadgwickAHRS.h compiled by gcc to MadgwickAHRS.pyd 
-		gcc -shared -IC:\Python34\include -LC:\Python34\libs MadgwickAHRS.c -lpython34 -o MadgwickAHRS.pyd 
+Python code:
+	ponycube.py, euclid.py
+C code to be compiled into modules to be called from Python:
+	MadgwickAHRS.c & MadgwickAHRS.h compiled by gcc to MadgwickAHRS.pyd 
+	gcc -shared -IC:\Python34\include -LC:\Python34\libs MadgwickAHRS.c -lpython34 -o MadgwickAHRS.pyd 
 ```
 IMU+GPS-Stream apps (install to mobile phone through Google PlayStore)
 - sends the measurements from your phone inertial sensors via UDP as CSV (Comma-Separated Values) to a computer in your network.
 This turns your phone into a wireless inertial measurement unit (IMU).
 The following sensors are supported:
-- Accelerometer
-- Gyroscope
-- Magnetometer
+-- Accelerometer
+-- Gyroscope
+-- Magnetometer
 If your phone has not all these sensors, only the available sensor data is transmitted.<br>
 Example UDP packet:<br>
 - 890.71558, 3, 0.076, 9.809, 0.565, 4, -0.559, 0.032, -0.134, 5, -21.660,-36.960,-28.140<br>
 - Timestamp [sec], sensorid, x, y, z, sensorid, x, y, z, sensorid, x, y, z<br>
 - Sensor id:
---3 - Accelerometer (m/s^2)
---4 - Gyroscope (rad/s)
---5 - Magnetometer (micro-Tesla uT)
+-- 3 - Accelerometer (m/s^2)
+-- 4 - Gyroscope (rad/s)
+-- 5 - Magnetometer (micro-Tesla uT)
 
 ## :iphone: Platform tested:
 I have tested my code on:
