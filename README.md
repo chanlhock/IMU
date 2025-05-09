@@ -20,10 +20,10 @@ http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygame
 Code included leveraged from open source with thanks :-) are:
 ```
 Python code:
- ponycube.py, euclid.py
+	ponycube.py, euclid.py
 C code to be compiled into modules to be called from Python:
- MadgwickAHRS.c & MadgwickAHRS.h compiled by gcc to MadgwickAHRS.pyd 
- gcc -shared -IC:\Python34\include -LC:\Python34\libs MadgwickAHRS.c -lpython34 -o MadgwickAHRS.pyd 
+	MadgwickAHRS.c & MadgwickAHRS.h compiled by gcc to MadgwickAHRS.pyd 
+	gcc -shared -IC:\Python34\include -LC:\Python34\libs MadgwickAHRS.c -lpython34 -o MadgwickAHRS.pyd 
 ```
 IMU+GPS-Stream apps (install to mobile phone through Google PlayStore)
 - sends the measurements from your phone inertial sensors via UDP as CSV (Comma-Separated Values) to a computer in your network.
