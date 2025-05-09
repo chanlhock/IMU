@@ -29,9 +29,9 @@ IMU+GPS-Stream apps (install to mobile phone through Google PlayStore)
 - sends the measurements from your phone inertial sensors via UDP as CSV (Comma-Separated Values) to a computer in your network.
 This turns your phone into a wireless inertial measurement unit (IMU).
 The following sensors are supported:
--- Accelerometer
--- Gyroscope
--- Magnetometer
+- Accelerometer
+- Gyroscope
+- Magnetometer
 If your phone has not all these sensors, only the available sensor data is transmitted.<br>
 Example UDP packet:<br>
 - 890.71558, 3, 0.076, 9.809, 0.565, 4, -0.559, 0.032, -0.134, 5, -21.660,-36.960,-28.140<br>
