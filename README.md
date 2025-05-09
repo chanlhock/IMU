@@ -34,12 +34,12 @@ The following sensors are supported:
 - Magnetometer
 If your phone has not all these sensors, only the available sensor data is transmitted.<br>
 Example UDP packet:<br>
-- 890.71558, 3, 0.076, 9.809, 0.565, 4, -0.559, 0.032, -0.134, 5, -21.660,-36.960,-28.140<br>
-- Timestamp [sec], sensorid, x, y, z, sensorid, x, y, z, sensorid, x, y, z<br>
-- Sensor id:
-	- 3 - Accelerometer (m/s^2)
-	- 4 - Gyroscope (rad/s)
-	- 5 - Magnetometer (micro-Tesla uT)
+	- 890.71558, 3, 0.076, 9.809, 0.565, 4, -0.559, 0.032, -0.134, 5, -21.660,-36.960,-28.140<br>
+	- Timestamp [sec], sensorid, x, y, z, sensorid, x, y, z, sensorid, x, y, z<br>
+	- Sensor id:
+		- 3 - Accelerometer (m/s^2)
+		- 4 - Gyroscope (rad/s)
+		- 5 - Magnetometer (micro-Tesla uT)
 
 ## :iphone: Platform tested:
 I have tested my code on:
