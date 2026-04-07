@@ -1,5 +1,13 @@
 # :mouse: Welcome to IMU
 
+<p align="center">
+<i><b>We keep moving forward, opening new doors, and doing new things, <br>because we're curious and curiosity keeps leading us down new paths.</b></i><br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ― WALT DISNEY
+</p> 
+
 ## Table of Contents
 - [Description](#scroll-description)
 - [Development Platform](#computer-development-platform)
