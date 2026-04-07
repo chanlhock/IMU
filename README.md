@@ -1,7 +1,7 @@
 # :mouse: Welcome to IMU
 
 <p align="center">
-<i><b>We keep moving forward, opening new doors, and doing new things, <br>because we're curious and curiosity keeps leading us down new paths.</b></i><br><br>
+<i><b>We keep moving forward, opening new doors, and doing new things, <br>because we're curious <br>and curiosity keeps leading us down new paths.</b></i><br><br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
